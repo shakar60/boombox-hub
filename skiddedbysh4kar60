@@ -1,0 +1,150 @@
+--Toggle
+local ToggleGui = Instance.new("ScreenGui")
+local Toggle = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties
+ToggleGui.Name = "Toggle Gui"
+ToggleGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ToggleGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ToggleGui.ResetOnSpawn = false
+
+UICorner.Parent = Toggle
+Toggle.Name = "Toggle"
+Toggle.Parent = ToggleGui
+Toggle.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)--position of the toggle
+Toggle.Size = UDim2.new(0, 80, 0, 38)--size of the toggle
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Open/Close"--name of the toggle
+Toggle.TextColor3 = Color3.fromRGB(203, 122, 49)
+Toggle.TextSize = 19.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+  Library:ToggleUI()
+end)
+--script
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Dzigi Hub v1.01", "DarkTheme")
+local Tab = Window:NewTab("Fe Scripts")
+local Section = Tab:NewSection("Script hubs")
+ 
+Section:NewButton("Fe Hub", "Script Hub", function()
+    print("Script hub")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/R3v0ked/Scripts/main/FE%20Script%20Hub"))()
+end)
+Section:NewButton("Tool Snatcher", "Bye bye tool", function()
+    print("Tool Snatcher v1")
+loadstring(game:HttpGet("https://pastebin.com/raw/6mUBaQKa", true))()end)
+ 
+Section:NewButton("Invis Fling", "Fling script", function()
+    print("Invisible")
+loadstring(game:HttpGet('https://pastebin.com/raw/08LqdrrC'))();
+end)
+ 
+Section:NewButton("Shed Bypasser", "Chat Bypass", function()
+    print("Credits to who")
+loadstring(game:HttpGet("https://the-shed.dev/scripts/sbp.lua", true))()end)
+ 
+Section:NewButton("Fe Animation moves", "Fe lol", function()
+    print("Xd")
+loadstring(game:HttpGet("https://pastebin.com/raw/RmD3qNp7", true))()end)
+ 
+Section:NewButton("Fe Zombie", "Must have some hats recommend for pc", function()
+    print("Alright")
+loadstring(game:HttpGet('https://gist.githubusercontent.com/1BlueCat/7668ee0c4e1b352d8ac51efd6ed6f3fc/raw/d6421d586bf9b5d2e3fc0ebf14203c849494ec5f/FE%2520Zombie'))()end)
+ 
+Section:NewSlider("walkspeed", "fast woah!", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+local Tab = Window:NewTab("Hubs")
+local Section = Tab:NewSection("Script hubs")
+Section:NewButton("arsenal hub", "Normal hub", function()
+    print("Arsenal")
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()end)
+Section:NewButton("Owl Hub", "Wow", function()
+    print("Owl hub")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();end)
+Section:NewButton("KeyBoard", "script", function()
+    print("Keyboard")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+local Tab = Window:NewTab("Boombox Hubs")
+local Section = Tab:NewSection("Visualizers")
+Section:NewButton("Mars Hub", "Boombox vis", function()
+    print("Alright")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/machport/asd/main/marshub.lua"))()end)
+Section:NewButton("Hash Hub", "Leaked hub", function()
+    print("Vis")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ggrimmed/Lucious-Ware/main/hashub.txt",true))()end)
+ 
+Section:NewButton("Verts Hub", "Normal vis", function()
+    print("wow")
+loadstring(game:HttpGet('https://pastebin.com/raw/xSAW2uX0'))()
+end)
+ 
+Section:NewButton("Error Log Vis", "visualizer", function()
+    print("Vis Hub")
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Enviie/Errorlog-s-Boombox-Visualizer-Crack/main/Error's%20Boombox%20Vis%20Main.lua"))("Enviie Soo Hot!")end)
+ 
+Section:NewButton("Lucious Ware", "Cracked hub", function()
+    print("Wow cracked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vyks/vyks/main/PremiumLucious.lua"))()
+end)
+ 
+Section:NewButton("Cypher X ", "Normal boombox hub", function()
+    print("DzigiScripts Cracked")
+loadstring(game:HttpGet("https://github.com/ggrimmed/Boombox-Reaper/blob/main/Cypher_X.lua.txt", true))()
+end)
+ 
+Section:NewButton("Systemic Hub", "Roblox hub", function()
+    print("Not working")
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\100\101\97\116\104\108\108\121\104\97\108\108\111\119\115\47\83\121\115\116\101\109\105\99\86\105\115\117\97\108\105\122\101\114\47\109\97\105\110\47\77\97\105\110\46\108\117\97\34\44\32\116\114\117\101\41\41\40\41\10")()
+    end)
+ 
+Section:NewButton("Fish Hub", "Fishy on me", function()
+    print("Fishy hub")
+loadstring(game:HttpGet('https://pastebin.com/raw/6y5Tqvx7'))()
+end)
+ 
+Section:NewButton("Salmon Hub", "Boombox hub", function()
+    print("it's ok lol")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Salmon-B0T/SalmonHub/main/SalmonHub.lua", true))()end)
+ 
+local Tab = Window:NewTab("Admin Scripts")
+local Section = Tab:NewSection("Admin hubs")
+Section:NewButton("Infinite Yield", "Cool admin script", function()
+    print("Woah lol")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()end)
+Section:NewButton("HomeBrew", "Useful Admin Gui", function()
+    print("admin hub")
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Syntaxx64/HomebrewAdmin/master/Main"))()end)
+Section:NewButton("Fates Admin", "Cool admin script", function()
+    print("woah lol")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();end)
+ 
+Section:NewButton("Oxisist Admin", "Admin", function()
+    print("Lol")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Oxisist/myscripts/eb16dee222392f282184dd5785c09fbdafbf4ce4/OxisAdmin.lua"))()
+end)
+ 
+Section:NewButton("CMD X", "admin", function()
+    print("Arceus x admin")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source'))()
+end)
+ 
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("settings /key binds")
+Section:NewButton("help", "?", function()
+    print("Comfirm")
+end)
+Section:NewKeybind("Change The KeyBind", "Hello", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+ 
+Section:NewColorPicker("Color Text", "Color Info", Color3.fromRGB(0,0,0), function(color)
+    print(color)
+    -- Second argument is the default color
+end)
+ 
+ 
